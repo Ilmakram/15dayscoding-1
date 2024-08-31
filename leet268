@@ -1,3 +1,5 @@
+Approach 1:Hashtable
+
 class Solution {
     public int missingNumber(int[] nums) {
         HashSet<Integer> set = new HashSet<>();
@@ -12,3 +14,13 @@ class Solution {
         return -1;
     }
 }
+Approach 2:mathematics
+
+n=len(nums)
+        sig=n*(n+1)/2
+        for i in range(len(nums)):
+            sig=sig-nums[i]
+        return sig   
+
+
+
